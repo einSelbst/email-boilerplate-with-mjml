@@ -1,0 +1,10 @@
+{
+  "html.format.wrapLineLength": 0,
+  "html.format.wrapAttributes": "force-aligned",
+  "prettier.printWidth": 1000,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
