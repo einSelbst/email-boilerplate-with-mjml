@@ -1,0 +1,28 @@
+{
+  "name": "email_builder",
+  "version": "1.0.0",
+  "description": "Setup for emails",
+  "main": "index.js",
+  "scripts": {
+    "build": "mjml index.mjml -o index.html --config.beautify=true",
+    "build:prod": "mjml index.mjml -o index.html --config.minify=true",
+    "watch": "mjml --watch index.mjml -o index.html",
+    "dev": "concurrently \"yarn run watch\" \"live-server --port=5000\"",
+    "node:dev": "concurrently \"nodemon index.js\" \"live-server --port=5000\"",
+    "node:liveserver": "live-server --port=5000"
+  },
+  "keywords": [
+    "emkt",
+    "email",
+    "marketing"
+  ],
+  "author": "Wildiney Di Masi",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "live-server": "^1.2.1",
+    "mjml": "^4.7.0",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {}
+}
