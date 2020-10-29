@@ -1,0 +1,34 @@
+<mjml>
+  <mj-head>
+    <mj-title>Title</mj-title>
+    <mj-attributes>
+      <mj-all padding="0" />
+      <mj-text font-size="14px" padding-bottom="10px" line-height="21px" font-family="Arial, sans-serif" color="#003e52" padding-bottom="5px" />
+    </mj-attributes>
+    <mj-style>
+      a:link,
+      a:visited,
+      a:active {
+        text-decoration: none;
+        color: #003e52;
+        font-weight: bold
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    </mj-style>
+    <mj-preview>Preview Message</mj-preview>
+  </mj-head>
+  <mj-body width="600px" background-color="#E8E8E8">
+
+    <mj-section background-color="#fff">
+      <mj-column>
+        <mj-image src="" href="" />
+        <mj-spacer height="10px" />
+        <mj-text>Text</mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>
