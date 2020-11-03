@@ -4,12 +4,12 @@
   "description": "Setup for emails",
   "main": "index.js",
   "scripts": {
+    "liveserver": "live-server --port=5000",
     "build": "mjml index.mjml -o index.html --config.beautify=true",
     "build:prod": "mjml index.mjml -o index.html --config.minify=true",
     "watch": "mjml --watch index.mjml -o index.html",
-    "dev": "concurrently \"yarn run watch\" \"live-server --port=5000\"",
-    "node:dev": "concurrently \"nodemon index.js\" \"live-server --port=5000\"",
-    "node:liveserver": "live-server --port=5000"
+    "dev": "concurrently \"yarn run build\" \"yarn run watch\" \"yarn run liveserver\"",
+    "node:dev": "concurrently \"nodemon index.js\" \"yarn run liveserver\""
   },
   "keywords": [
     "emkt",
